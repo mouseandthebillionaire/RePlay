@@ -257,7 +257,7 @@
 							"revision" : 8
 						}
 ,
-						"rect" : [ 123.0, 303.0, 1157.0, 487.0 ],
+						"rect" : [ 78.0, 234.0, 1157.0, 487.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -280,13 +280,42 @@
 								"box" : 								{
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
+									"id" : "obj-13",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 663.5, 239.0, 43.0, 20.0 ],
+									"presentation_rect" : [ 611.75, 243.0, 0.0, 0.0 ],
+									"text" : "r save"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-17",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 663.5, 268.0, 65.0, 18.0 ],
+									"presentation_rect" : [ 611.75, 272.0, 0.0, 0.0 ],
+									"text" : "write Start"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
 									"id" : "obj-46",
 									"maxclass" : "newobj",
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 396.75, 317.0, 43.0, 20.0 ],
-									"presentation_rect" : [ 399.0, 314.0, 0.0, 0.0 ],
 									"text" : "r save"
 								}
 
@@ -301,7 +330,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 396.75, 346.0, 47.0, 18.0 ],
-									"presentation_rect" : [ 399.0, 343.0, 0.0, 0.0 ],
 									"text" : "write A"
 								}
 
@@ -316,7 +344,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 311.25, 317.0, 43.0, 20.0 ],
-									"presentation_rect" : [ 313.5, 314.0, 0.0, 0.0 ],
 									"text" : "r save"
 								}
 
@@ -331,7 +358,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 311.25, 346.0, 47.0, 18.0 ],
-									"presentation_rect" : [ 313.5, 343.0, 0.0, 0.0 ],
 									"text" : "write B"
 								}
 
@@ -534,7 +560,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 643.5, 301.0, 30.0, 30.0 ]
+									"patching_rect" : [ 643.5, 346.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -545,7 +571,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 533.5, 301.0, 30.0, 30.0 ]
+									"patching_rect" : [ 533.5, 346.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -755,7 +781,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 4,
 									"outlettype" : [ "", "", "", "" ],
-									"patching_rect" : [ 628.5, 240.0, 57.0, 20.0 ],
+									"patching_rect" : [ 628.5, 300.0, 57.0, 20.0 ],
 									"saved_object_attributes" : 									{
 										"embed" : 0
 									}
@@ -815,7 +841,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 4,
 									"outlettype" : [ "", "", "", "" ],
-									"patching_rect" : [ 510.5, 247.0, 65.0, 20.0 ],
+									"patching_rect" : [ 510.5, 300.0, 65.0, 20.0 ],
 									"saved_object_attributes" : 									{
 										"embed" : 0
 									}
@@ -1122,6 +1148,24 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-12", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-17", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-13", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-239", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-17", 0 ]
 								}
 
 							}
@@ -1836,7 +1880,7 @@
 					"fontname" : "Arial",
 					"fontsize" : 10.0,
 					"id" : "obj-4",
-					"items" : [ "Apple Internal Keyboard / Trackpad", ",", "Apple Mikey HID Driver", ",", "Wireless Controller", ",", "Apple Internal Keyboard / Trackpad 2", ",", "Apple Internal Keyboard / Trackpad 3", ",", "Apple Internal Keyboard / Trackpad 4", ",", "Apple IR" ],
+					"items" : [ "Apple Internal Keyboard / Trackpad", ",", "Apple Mikey HID Driver", ",", "Apple Internal Keyboard / Trackpad 2", ",", "Apple Internal Keyboard / Trackpad 3", ",", "Apple Internal Keyboard / Trackpad 4", ",", "Apple IR" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1977,16 +2021,44 @@
 			}
  ],
 		"dependency_cache" : [ 			{
+				"name" : "xAxis.txt",
+				"bootpath" : "/Users/M/Music/Replay/Materials/MarioParty/gameplays/1",
+				"patcherrelativepath" : "../MarioParty/gameplays/1",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "buttonLog.maxpat",
-				"bootpath" : "/Users/M/GitHub/RePlay/gameLogger/log_NES",
-				"patcherrelativepath" : "../gameLogger/log_NES",
+				"bootpath" : "/Users/M/Music/Replay/Materials/gameLogger",
+				"patcherrelativepath" : "",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "yAxis.txt",
+				"bootpath" : "/Users/M/Music/Replay/Materials/MarioParty/gameplays/1",
+				"patcherrelativepath" : "../MarioParty/gameplays/1",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "A.txt",
+				"bootpath" : "/Users/M/Music/Replay/Materials/MarioParty/gameplays/1",
+				"patcherrelativepath" : "../MarioParty/gameplays/1",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "B.txt",
+				"bootpath" : "/Users/M/Music/Replay/Materials/MarioParty/gameplays/1",
+				"patcherrelativepath" : "../MarioParty/gameplays/1",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "select.maxref.xml",
 				"bootpath" : "/Applications/Max/Max6/patches/docs/refpages/max-ref",
-				"patcherrelativepath" : "../../../../../Applications/Max/Max6/patches/docs/refpages/max-ref",
+				"patcherrelativepath" : "../../../../../../Applications/Max/Max6/patches/docs/refpages/max-ref",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
