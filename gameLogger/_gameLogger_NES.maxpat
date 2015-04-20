@@ -3,11 +3,12 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 6,
-			"minor" : 0,
-			"revision" : 8
+			"minor" : 1,
+			"revision" : 10,
+			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 227.0, 61.0, 952.0, 573.0 ],
+		"rect" : [ 382.0, 275.0, 963.0, 573.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -253,11 +254,12 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 8
+							"minor" : 1,
+							"revision" : 10,
+							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 78.0, 234.0, 1157.0, 487.0 ],
+						"rect" : [ 258.0, 559.0, 1157.0, 487.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -286,7 +288,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 663.5, 239.0, 43.0, 20.0 ],
-									"presentation_rect" : [ 611.75, 243.0, 0.0, 0.0 ],
 									"text" : "r save"
 								}
 
@@ -301,7 +302,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 663.5, 268.0, 65.0, 18.0 ],
-									"presentation_rect" : [ 611.75, 272.0, 0.0, 0.0 ],
 									"text" : "write Start"
 								}
 
@@ -372,7 +372,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 941.0, 341.0, 50.0, 18.0 ],
-									"text" : "12 0"
+									"text" : "6 0"
 								}
 
 							}
@@ -525,7 +525,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 71.5, 347.0, 68.0, 18.0 ],
+									"patching_rect" : [ 71.5, 347.0, 84.0, 18.0 ],
 									"text" : "write xAxis"
 								}
 
@@ -800,7 +800,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 628.5, 140.0, 32.5, 18.0 ],
-									"text" : "12"
+									"text" : "11"
 								}
 
 							}
@@ -860,7 +860,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 510.5, 140.0, 32.5, 18.0 ],
-									"text" : "11"
+									"text" : "10"
 								}
 
 							}
@@ -920,7 +920,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 276.25, 164.0, 32.5, 18.0 ],
-									"text" : "3"
+									"text" : "6"
 								}
 
 							}
@@ -980,7 +980,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 383.25, 164.0, 32.5, 18.0 ],
-									"text" : "4"
+									"text" : "5"
 								}
 
 							}
@@ -1054,7 +1054,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 137.5, 129.0, 32.5, 18.0 ],
-									"text" : "14"
+									"text" : "18"
 								}
 
 							}
@@ -1095,7 +1095,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 4,
 									"outlettype" : [ "", "", "", "" ],
-									"patching_rect" : [ 46.5, 381.0, 61.0, 20.0 ],
+									"patching_rect" : [ 50.0, 381.0, 61.0, 20.0 ],
 									"saved_object_attributes" : 									{
 										"embed" : 0
 									}
@@ -1114,7 +1114,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 50.0, 129.0, 32.5, 18.0 ],
-									"text" : "13"
+									"text" : "17"
 								}
 
 							}
@@ -1699,8 +1699,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 8
+							"minor" : 1,
+							"revision" : 10,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 149.0, 79.0, 640.0, 480.0 ],
@@ -1880,7 +1881,7 @@
 					"fontname" : "Arial",
 					"fontsize" : 10.0,
 					"id" : "obj-4",
-					"items" : [ "Apple Internal Keyboard / Trackpad", ",", "Apple Mikey HID Driver", ",", "Apple Internal Keyboard / Trackpad 2", ",", "Apple Internal Keyboard / Trackpad 3", ",", "Apple Internal Keyboard / Trackpad 4", ",", "Apple IR" ],
+					"items" : [ "NES30 Joystick", ",", "Apple Optical USB Mouse", ",", "Apple Keyboard", ",", "Apple Keyboard 2", ",", "Apple IR" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -2021,44 +2022,16 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "xAxis.txt",
-				"bootpath" : "/Users/M/Music/Replay/Materials/MarioParty/gameplays/1",
-				"patcherrelativepath" : "../MarioParty/gameplays/1",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "buttonLog.maxpat",
-				"bootpath" : "/Users/M/Music/Replay/Materials/gameLogger",
-				"patcherrelativepath" : "",
+				"bootpath" : "/Users/I/Documents/RePlay/gameLogger",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "yAxis.txt",
-				"bootpath" : "/Users/M/Music/Replay/Materials/MarioParty/gameplays/1",
-				"patcherrelativepath" : "../MarioParty/gameplays/1",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "A.txt",
-				"bootpath" : "/Users/M/Music/Replay/Materials/MarioParty/gameplays/1",
-				"patcherrelativepath" : "../MarioParty/gameplays/1",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "B.txt",
-				"bootpath" : "/Users/M/Music/Replay/Materials/MarioParty/gameplays/1",
-				"patcherrelativepath" : "../MarioParty/gameplays/1",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "select.maxref.xml",
-				"bootpath" : "/Applications/Max/Max6/patches/docs/refpages/max-ref",
-				"patcherrelativepath" : "../../../../../../Applications/Max/Max6/patches/docs/refpages/max-ref",
+				"bootpath" : "/Applications/Max/patches/docs/refpages/max-ref",
+				"patcherrelativepath" : "../../../../../Applications/Max/patches/docs/refpages/max-ref",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
