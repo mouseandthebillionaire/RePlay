@@ -7,7 +7,7 @@
 			"revision" : 8
 		}
 ,
-		"rect" : [ 223.0, 46.0, 1107.0, 658.0 ],
+		"rect" : [ 24.0, 45.0, 730.0, 419.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -176,7 +176,7 @@
 							"revision" : 8
 						}
 ,
-						"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+						"rect" : [ 323.0, 45.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -199,11 +199,39 @@
 								"box" : 								{
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
+									"id" : "obj-4",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 152.0, 160.0, 32.5, 18.0 ],
+									"text" : "0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-2",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 152.0, 100.0, 45.0, 20.0 ],
+									"text" : "r reset"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
 									"id" : "obj-1",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 50.0, 218.0, 58.0, 20.0 ],
+									"patching_rect" : [ 50.0, 228.0, 58.0, 20.0 ],
 									"text" : "s clocker"
 								}
 
@@ -246,7 +274,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "float", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 50.0, 190.0, 65.0, 20.0 ]
+									"patching_rect" : [ 50.0, 200.0, 65.0, 20.0 ]
 								}
 
 							}
@@ -281,6 +309,15 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-2", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-24", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -294,6 +331,16 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-24", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-41", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"midpoints" : [ 161.5, 189.0, 59.5, 189.0 ],
+									"source" : [ "obj-4", 0 ]
 								}
 
 							}
@@ -361,7 +408,7 @@
 							"revision" : 8
 						}
 ,
-						"rect" : [ 432.0, 63.0, 434.0, 31.0 ],
+						"rect" : [ 233.0, 62.0, 434.0, 31.0 ],
 						"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
@@ -482,7 +529,7 @@
 									"presentation_linecount" : 2,
 									"presentation_rect" : [ 4.0, 6.0, 426.0, 19.0 ],
 									"rounded" : 6.0,
-									"text" : "\"Macintosh HD:/Users/M/Music/Replay/Materials/MarioParty/gameplays/1/\""
+									"text" : "\"Macintosh HD:/Users/M/Music/Replay/Materials/MarioParty/gameplays/4/\""
 								}
 
 							}
@@ -595,7 +642,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 10,
-					"outlettype" : [ "int", "int", "int", "int", "", "int", "int", "", "int", "int" ],
+					"outlettype" : [ "int", "int", "int", "int", "int", "int", "int", "int", "int", "int" ],
 					"patching_rect" : [ 209.0, 55.5, 472.0, 20.0 ],
 					"text" : "gameplayParser"
 				}
@@ -923,6 +970,19 @@
 								"box" : 								{
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
+									"id" : "obj-4",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 309.0, 114.0, 47.0, 20.0 ],
+									"text" : "s reset"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
 									"id" : "obj-14",
 									"maxclass" : "message",
 									"numinlets" : 2,
@@ -1023,7 +1083,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 257.0, 100.0, 43.0, 20.0 ],
+									"patching_rect" : [ 250.0, 114.0, 43.0, 20.0 ],
 									"text" : "s stop"
 								}
 
@@ -1107,6 +1167,15 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-17", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-1", 0 ]
@@ -2642,23 +2711,23 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "xAxis.txt",
-				"bootpath" : "/Users/M/Music/Replay/Materials/MarioParty/gameplays/1",
-				"patcherrelativepath" : "../MarioParty/gameplays/1",
+				"name" : "xAxis",
+				"bootpath" : "/Users/M/Music/Replay/Materials/MarioParty/gameplays/4",
+				"patcherrelativepath" : "../MarioParty/gameplays/4",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "B.txt",
-				"bootpath" : "/Users/M/Music/Replay/Materials/MarioParty/gameplays/1",
-				"patcherrelativepath" : "../MarioParty/gameplays/1",
+				"name" : "B",
+				"bootpath" : "/Users/M/Music/Replay/Materials/MarioParty/gameplays/4",
+				"patcherrelativepath" : "../MarioParty/gameplays/4",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "A.txt",
-				"bootpath" : "/Users/M/Music/Replay/Materials/MarioParty/gameplays/1",
-				"patcherrelativepath" : "../MarioParty/gameplays/1",
+				"name" : "A",
+				"bootpath" : "/Users/M/Music/Replay/Materials/MarioParty/gameplays/4",
+				"patcherrelativepath" : "../MarioParty/gameplays/4",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
@@ -2666,6 +2735,13 @@
 				"name" : "yAxis.txt",
 				"bootpath" : "/Users/M/Music/Replay/Materials/MarioParty/gameplays/1",
 				"patcherrelativepath" : "../MarioParty/gameplays/1",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "_Start",
+				"bootpath" : "/Users/M/Music/Replay/Materials/MarioParty/gameplays/4",
+				"patcherrelativepath" : "../MarioParty/gameplays/4",
 				"type" : "TEXT",
 				"implicit" : 1
 			}

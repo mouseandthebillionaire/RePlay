@@ -28,34 +28,35 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-3",
+					"id" : "obj-20",
 					"maxclass" : "button",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 211.0, 41.0, 20.0, 20.0 ]
+					"patching_rect" : [ 67.0, 21.0, 40.0, 40.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-2",
+					"id" : "obj-19",
 					"maxclass" : "button",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 211.0, 21.0, 40.0, 40.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
 					"patching_rect" : [ 141.0, 41.0, 20.0, 20.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-1",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 67.0, 41.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -286,7 +287,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 663.5, 239.0, 43.0, 20.0 ],
-									"presentation_rect" : [ 611.75, 243.0, 0.0, 0.0 ],
 									"text" : "r save"
 								}
 
@@ -301,7 +301,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 663.5, 268.0, 65.0, 18.0 ],
-									"presentation_rect" : [ 611.75, 272.0, 0.0, 0.0 ],
 									"text" : "write Start"
 								}
 
@@ -372,7 +371,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 941.0, 341.0, 50.0, 18.0 ],
-									"text" : "12 0"
+									"text" : "4 0"
 								}
 
 							}
@@ -920,7 +919,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 276.25, 164.0, 32.5, 18.0 ],
-									"text" : "3"
+									"text" : "4"
 								}
 
 							}
@@ -980,7 +979,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 383.25, 164.0, 32.5, 18.0 ],
-									"text" : "4"
+									"text" : "5"
 								}
 
 							}
@@ -1880,7 +1879,7 @@
 					"fontname" : "Arial",
 					"fontsize" : 10.0,
 					"id" : "obj-4",
-					"items" : [ "Apple Internal Keyboard / Trackpad", ",", "Apple Mikey HID Driver", ",", "Apple Internal Keyboard / Trackpad 2", ",", "Apple Internal Keyboard / Trackpad 3", ",", "Apple Internal Keyboard / Trackpad 4", ",", "Apple IR" ],
+					"items" : [ "Apple Internal Keyboard / Trackpad", ",", "Apple Mikey HID Driver", ",", "GamePad Pro USB", ",", "Apple Internal Keyboard / Trackpad 2", ",", "Apple Internal Keyboard / Trackpad 3", ",", "Apple Internal Keyboard / Trackpad 4", ",", "Apple IR" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1893,28 +1892,19 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-56", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-57", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-2", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-36", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-3", 0 ]
+					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-56", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-20", 0 ]
 				}
 
 			}
@@ -1994,6 +1984,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-57", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-93", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -2021,38 +2020,10 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "xAxis.txt",
-				"bootpath" : "/Users/M/Music/Replay/Materials/MarioParty/gameplays/1",
-				"patcherrelativepath" : "../MarioParty/gameplays/1",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "buttonLog.maxpat",
 				"bootpath" : "/Users/M/Music/Replay/Materials/gameLogger",
 				"patcherrelativepath" : "",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "yAxis.txt",
-				"bootpath" : "/Users/M/Music/Replay/Materials/MarioParty/gameplays/1",
-				"patcherrelativepath" : "../MarioParty/gameplays/1",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "A.txt",
-				"bootpath" : "/Users/M/Music/Replay/Materials/MarioParty/gameplays/1",
-				"patcherrelativepath" : "../MarioParty/gameplays/1",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "B.txt",
-				"bootpath" : "/Users/M/Music/Replay/Materials/MarioParty/gameplays/1",
-				"patcherrelativepath" : "../MarioParty/gameplays/1",
-				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
