@@ -28,7 +28,7 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-20",
+					"id" : "obj-12",
 					"maxclass" : "button",
 					"numinlets" : 1,
 					"numoutlets" : 1,
@@ -39,7 +39,7 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-19",
+					"id" : "obj-11",
 					"maxclass" : "button",
 					"numinlets" : 1,
 					"numoutlets" : 1,
@@ -300,8 +300,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 663.5, 268.0, 65.0, 18.0 ],
-									"text" : "write Start"
+									"patching_rect" : [ 663.5, 268.0, 71.0, 18.0 ],
+									"text" : "write _Start"
 								}
 
 							}
@@ -371,7 +371,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 941.0, 341.0, 50.0, 18.0 ],
-									"text" : "4 0"
+									"text" : "12 0"
 								}
 
 							}
@@ -765,7 +765,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
-									"outlettype" : [ "", "int" ],
+									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 628.5, 174.0, 64.0, 20.0 ],
 									"text" : "buttonLog"
 								}
@@ -825,7 +825,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
-									"outlettype" : [ "", "int" ],
+									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 510.5, 191.0, 64.0, 20.0 ],
 									"text" : "buttonLog"
 								}
@@ -885,7 +885,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
-									"outlettype" : [ "", "int" ],
+									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 276.25, 198.0, 64.0, 20.0 ],
 									"text" : "buttonLog"
 								}
@@ -945,7 +945,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
-									"outlettype" : [ "", "int" ],
+									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 383.25, 198.0, 64.0, 20.0 ],
 									"text" : "buttonLog"
 								}
@@ -1019,7 +1019,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
-									"outlettype" : [ "", "int" ],
+									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 137.5, 180.0, 64.0, 20.0 ],
 									"text" : "buttonLog"
 								}
@@ -1079,7 +1079,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
-									"outlettype" : [ "", "int" ],
+									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 50.0, 180.0, 64.0, 20.0 ],
 									"text" : "buttonLog"
 								}
@@ -1879,7 +1879,7 @@
 					"fontname" : "Arial",
 					"fontsize" : 10.0,
 					"id" : "obj-4",
-					"items" : [ "Apple Internal Keyboard / Trackpad", ",", "Apple Mikey HID Driver", ",", "GamePad Pro USB", ",", "Apple Internal Keyboard / Trackpad 2", ",", "Apple Internal Keyboard / Trackpad 3", ",", "Apple Internal Keyboard / Trackpad 4", ",", "Apple IR" ],
+					"items" : [ "Apple Internal Keyboard / Trackpad", ",", "Apple Mikey HID Driver", ",", "Apple Internal Keyboard / Trackpad 2", ",", "Apple Internal Keyboard / Trackpad 3", ",", "Apple Internal Keyboard / Trackpad 4", ",", "Apple IR" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1895,7 +1895,7 @@
 					"destination" : [ "obj-36", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-19", 0 ]
+					"source" : [ "obj-11", 0 ]
 				}
 
 			}
@@ -1904,7 +1904,7 @@
 					"destination" : [ "obj-56", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-20", 0 ]
+					"source" : [ "obj-12", 0 ]
 				}
 
 			}
@@ -2020,16 +2020,37 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "buttonLog.maxpat",
-				"bootpath" : "/Users/M/Music/Replay/Materials/gameLogger",
+				"name" : "xAxis",
+				"bootpath" : "/Users/M/Music/Replay/Materials/MarioParty/gameplays/4",
 				"patcherrelativepath" : "",
-				"type" : "JSON",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "A",
+				"bootpath" : "/Users/M/Music/Replay/Materials/MarioParty/gameplays/4",
+				"patcherrelativepath" : "",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "B",
+				"bootpath" : "/Users/M/Music/Replay/Materials/MarioParty/gameplays/4",
+				"patcherrelativepath" : "",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "select.maxref.xml",
 				"bootpath" : "/Applications/Max/Max6/patches/docs/refpages/max-ref",
-				"patcherrelativepath" : "../../../../../../Applications/Max/Max6/patches/docs/refpages/max-ref",
+				"patcherrelativepath" : "../../../../../../../../Applications/Max/Max6/patches/docs/refpages/max-ref",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "_Start",
+				"bootpath" : "/Users/M/Music/Replay/Materials/MarioParty/gameplays/4",
+				"patcherrelativepath" : "",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
