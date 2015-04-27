@@ -5381,7 +5381,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 146.5, 418.0, 149.0, 20.0 ],
-									"text" : "if $i1 == 127 then 2 else 1"
+									"text" : "if $i1 == 128 then 2 else 1"
 								}
 
 							}
