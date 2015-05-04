@@ -3,12 +3,11 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 6,
-			"minor" : 1,
-			"revision" : 10,
-			"architecture" : "x86"
+			"minor" : 0,
+			"revision" : 8
 		}
 ,
-		"rect" : [ 802.0, 161.0, 952.0, 573.0 ],
+		"rect" : [ 328.0, 161.0, 952.0, 573.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -166,12 +165,11 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 1,
-							"revision" : 10,
-							"architecture" : "x86"
+							"minor" : 0,
+							"revision" : 8
 						}
 ,
-						"rect" : [ 571.0, 396.0, 1349.0, 671.0 ],
+						"rect" : [ -55.0, 391.0, 1349.0, 671.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -190,7 +188,6 @@
 						"description" : "",
 						"digest" : "",
 						"tags" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Arial",
@@ -1175,7 +1172,7 @@
 					"fontname" : "Arial",
 					"fontsize" : 10.0,
 					"id" : "obj-31",
-					"items" : [ "Controller", ",", "Wireless Controller", ",", "Apple Cinema HD Display", ",", "Wacom Wireless Receiver", ",", "Wacom Wireless Receiver 2", ",", "Wacom Wireless Receiver 3", ",", "Apple Optical USB Mouse", ",", "Apple Keyboard", ",", "Apple Keyboard 2", ",", "Apple IR" ],
+					"items" : [ "Apple Internal Keyboard / Trackpad", ",", "Apple Mikey HID Driver", ",", "Apple Internal Keyboard / Trackpad 2", ",", "Apple Internal Keyboard / Trackpad 3", ",", "Apple Internal Keyboard / Trackpad 4", ",", "Apple IR" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1427,9 +1424,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 1,
-							"revision" : 10,
-							"architecture" : "x86"
+							"minor" : 0,
+							"revision" : 8
 						}
 ,
 						"rect" : [ 79.0, 68.0, 1157.0, 487.0 ],
@@ -3247,9 +3243,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 1,
-							"revision" : 10,
-							"architecture" : "x86"
+							"minor" : 0,
+							"revision" : 8
 						}
 ,
 						"rect" : [ 149.0, 79.0, 640.0, 480.0 ],
@@ -3429,7 +3424,7 @@
 					"fontname" : "Arial",
 					"fontsize" : 10.0,
 					"id" : "obj-4",
-					"items" : [ "Controller", ",", "Wireless Controller", ",", "Apple Cinema HD Display", ",", "Wacom Wireless Receiver", ",", "Wacom Wireless Receiver 2", ",", "Wacom Wireless Receiver 3", ",", "Apple Optical USB Mouse", ",", "Apple Keyboard", ",", "Apple Keyboard 2", ",", "Apple IR" ],
+					"items" : [ "Apple Internal Keyboard / Trackpad", ",", "Apple Mikey HID Driver", ",", "Apple Internal Keyboard / Trackpad 2", ",", "Apple Internal Keyboard / Trackpad 3", ",", "Apple Internal Keyboard / Trackpad 4", ",", "Apple IR" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -3644,17 +3639,73 @@
 			}
  ],
 		"dependency_cache" : [ 			{
+				"name" : "Up_P1",
+				"bootpath" : "/Users/M/Music/Replay/Materials/Nidghogg",
+				"patcherrelativepath" : "",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "buttonLogXbox.maxpat",
-				"bootpath" : "/Users/I/Documents/RePlay/gameLogger/Nidghogg",
-				"patcherrelativepath" : ".",
+				"bootpath" : "/Users/M/Music/Replay/Materials/Nidghogg",
+				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Left_P1",
+				"bootpath" : "/Users/M/Music/Replay/Materials/Nidghogg",
+				"patcherrelativepath" : "",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Right_P1",
+				"bootpath" : "/Users/M/Music/Replay/Materials/Nidghogg",
+				"patcherrelativepath" : "",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "X_P1",
+				"bootpath" : "/Users/M/Music/Replay/Materials/Nidghogg",
+				"patcherrelativepath" : "",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Down_P1",
+				"bootpath" : "/Users/M/Music/Replay/Materials/Nidghogg",
+				"patcherrelativepath" : "",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "A_P1",
+				"bootpath" : "/Users/M/Music/Replay/Materials/Nidghogg",
+				"patcherrelativepath" : "",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "buttonLogPS4.maxpat",
-				"bootpath" : "/Users/I/Documents/RePlay/gameLogger/Nidghogg",
-				"patcherrelativepath" : ".",
+				"bootpath" : "/Users/M/Music/Replay/Materials/Nidghogg",
+				"patcherrelativepath" : "",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "x_P2",
+				"bootpath" : "/Users/M/Music/Replay/Materials/Nidghogg",
+				"patcherrelativepath" : "",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Square_P2",
+				"bootpath" : "/Users/M/Music/Replay/Materials/Nidghogg",
+				"patcherrelativepath" : "",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
  ]
